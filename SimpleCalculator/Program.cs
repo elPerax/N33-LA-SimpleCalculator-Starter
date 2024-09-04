@@ -9,12 +9,12 @@ namespace SimpleCalculator
             try
             {
                 // Class to convert user input
-                InputConverter inputConverter = new InputConverter();
+                ////InputConverter inputConverter = new InputConverter();
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
-                double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
                 string operation = Console.ReadLine();
 
