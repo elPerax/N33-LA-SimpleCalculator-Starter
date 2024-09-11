@@ -13,8 +13,10 @@ namespace SimpleCalculator
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
-                int result1 = 0, result2 = 0;
-                bool firstNumber, secondNumber;
+                double result1 = 0.00;
+                double result2 = 0.00;
+                bool firstNumber;
+                bool secondNumber;
 
                 bool completion = true;
                 while (completion)
@@ -46,9 +48,10 @@ namespace SimpleCalculator
 
                 double resultOperation = calculatorEngine.Calculate(operation, result1, result2);
 
-                Console.WriteLine(resultOperation);
+                Console.WriteLine($"The result of {result1} plus {result2} is equal to: {Math.Round(resultOperation, 2)}");
 
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 // Normally, we'd log this error to a file.
                 Console.WriteLine(ex.Message);
