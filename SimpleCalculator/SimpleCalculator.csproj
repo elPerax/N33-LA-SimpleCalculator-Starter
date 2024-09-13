@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CalculatorEngine">
-      <HintPath>..\..\CalculatorEngine\CalculatorEngine\bin\Release\CalculatorEngine.dll</HintPath>
+      <HintPath>..\..\..\..\OneDrive - Champlain Regional College\calculatorEngine\calculatorEngine\bin\Release\calculatorEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

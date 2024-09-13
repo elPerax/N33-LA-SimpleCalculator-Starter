@@ -31,7 +31,14 @@ namespace SimpleCalculator
 
                 case "divide":
                 case "/":
-                    result = (argFirstNumber + argSecondNumber);
+                    if (argSecondNumber != 0)
+                    {
+                        result = (argFirstNumber / argSecondNumber);
+                    }
+                    else
+                    {
+                        throw new DivideByZeroException("Cannot divide by zero.");
+                    }
                     break;
                 case "raised":
                 case "^":

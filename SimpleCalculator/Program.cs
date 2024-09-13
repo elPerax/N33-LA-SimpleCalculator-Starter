@@ -40,10 +40,10 @@ namespace SimpleCalculator
                     }
 
                     completion = false;
-                    break;
+                  
                 }
 
-                Console.WriteLine("Enter add or + to add the numbers together.");
+                Console.WriteLine("Write the appropiate symbol to do the operation that you wish to do(+,-,*,/,^) or the name of the operation:");
                 string operation = Console.ReadLine();
 
                 double resultOperation = calculatorEngine.Calculate(operation, result1, result2);
