@@ -33,7 +33,10 @@ namespace SimpleCalculator
                 case "/":
                     result = (argFirstNumber + argSecondNumber);
                     break;
-
+                case "raised":
+                case "^":
+                    result = Math.Pow(argFirstNumber, argSecondNumber);
+                    break;
 
             }
 
