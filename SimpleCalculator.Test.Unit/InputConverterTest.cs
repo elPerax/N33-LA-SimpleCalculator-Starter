@@ -12,8 +12,8 @@ namespace SimpleCalculator.Test.Unit
         public void ConvertsValidStringInputIntoDouble()
         {
             string inputNumber = "5";
-            double convertedNumber = 
-
+            bool success = InputConverter.ConvertInputToNumeric(inputNumber, out double convertedNumber);
+            Assert.IsTrue(success);
             Assert.AreEqual(5, convertedNumber);
         }
 
