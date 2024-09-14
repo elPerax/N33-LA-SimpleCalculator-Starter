@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CalculatorEngine">
-      <HintPath>..\..\..\..\OneDrive - Champlain Regional College\calculatorEngine\calculatorEngine\bin\Release\calculatorEngine.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
